@@ -11,7 +11,6 @@ st.write("Cari pemain alternatif yang serupa dengan statistik bintang dunia namu
 # Load Data
 @st.cache_data
 def load_data():
-    # Cukup tuliskan nama filenya saja karena file ada di folder yang sama di GitHub
     data = pd.read_csv('transfermarkt_fbref_201920.csv', sep=';')
     return data.dropna(subset=['value'])
 
