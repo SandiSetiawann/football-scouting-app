@@ -37,7 +37,7 @@ if st.button("Cari Alternatif"):
     elif pos_code == 'DF':
         features = ['passes_completed', 'interceptions', 'clearances', 'blocks', 'tackles']
     elif pos_code == 'GK':
-        features = ['gk_save_pct', 'gk_clean_sheets', 'gk_goals_against_per90']
+        features = ['save_pct', 'gk_clean_sheets', 'gk_goals_against_per90']
     
     # Memfilter dataset berdasarkan posisi yang dicari
     df_pos = df_app[df_app['position'].str.contains(pos_code)].copy().reset_index(drop=True)
